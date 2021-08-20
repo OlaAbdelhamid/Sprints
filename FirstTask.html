@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1 {
+            text-align: center;
+            color: blueviolet;
+        }
+    </style>
+    <script type="text/javascript">
+        function calc() {
+         digit1 = document.getElementById('firstDigit').value;
+         digit2 = document.getElementById('SecondDigit').value;
+         result = parseFloat(digit1) + parseFloat(digit2)
+         document.getElementById("result").value= result;
+        }
+    </script>
+
+</head>
+<body>
+    <h1 class="h1">Welcome to my Calculator</h1>
+    <form>
+        <label for="firstDigit">First Digit:</label><br>
+        <input type="text" id="firstDigit" name="firstDigit"><br>
+        <label for="SecondDigit">Second Digit:</label><br>
+        <input type="text" id="SecondDigit" name="SecondDigit">
+        <input type="text" id ="result" />
+        <button type="button" onclick = "calc()">Calculate</button>
+      </form>
+
+</body>
+</html>
